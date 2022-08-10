@@ -1,76 +1,54 @@
 #include <bits/stdc++.h>
+using namespace std;
+ 
+#define _ ios_base::sync_with_stdio(0); cin.tie(0);
+#define endl '\n'
+ 
+typedef long long ll;
+int cont = 0;
 
-typedef struct{
-    int n1;
-    int n2;
-} swaps;
-
-long long contSwap = 0;
-swaps *trocas;
-
-// Realiza a troca de posições do vetor
-template <class tp>
-void swap(tp *v1, tp *v2, int idx1, int idx2){
-    tp aux = *v1;
-    *v1 = *v2;
-    *v2 = aux; 
-    if(idx1 != idx2 && *v1 != *v2){
-        trocas[contSwap].n1 = idx1;
-        trocas[contSwap].n2 = idx2; 
-        contSwap++; 
-    }
-}
-
-template <class tp>
-int partition(tp *vec, int start, int end){
-    int arrow_left = start-1;
-    int arrow_right = start;
-    int index_pivot = (start+end)/2;
-    tp pivot = vec[index_pivot];
-
-    while(arrow_right <= end){ 
-        if(vec[arrow_right] < pivot){
-            swap(&vec[arrow_left + 1], &vec[arrow_right], arrow_left + 1, arrow_right);
-            arrow_left++;
-        } 
-        if(vec[arrow_right] == pivot){
-            index_pivot = arrow_right;
+int min(vector<ll> vec, int begin){
+    ll min = vec[begin];
+    int position = begin;
+    for(int i=begin; i<vec.size(); i++){
+        if(min > vec[i]){
+            min = vec[i];
+            position = i;
         }
-        arrow_right++;
     }
-
-    arrow_left++;
-    swap(&vec[arrow_left], &vec[index_pivot], arrow_left, index_pivot);
-
-    return arrow_left;
+    return position;
 }
 
-template <class tp>
-void quickSort(tp *vec, int start, int end){
-    if(start<end){
-        int index_pivot =  partition(vec, start, end);
-        quickSort(vec,start,index_pivot-1);
-        quickSort(vec,index_pivot+1,end);
-    }
+void swap(ll *v1, ll *v2){
+    int aux = *v1;
+    *v1 = *v2;
+    *v2 = aux;
 }
 
-int main(){
-    int n; std::cin>>n;
-    long long *vec = new long long[n];
-
-    // int vec[] = {9,2,6,1,8,3};
-    // int n = 6;
+int main(){_
+    int n; cin>>n;
+    vector<ll> vec(n);
 
     for(int i=0; i<n; i++){
-        std::cin>>vec[i];
+        cin>>vec[i];
     }
 
-    trocas = new swaps[n*n];
+    int i=0, index = 0;
+    vector<pair<int,int>> res;
 
-    quickSort(vec, 0, n-1);
-
-    std::cout<<contSwap<<std::endl;
-    for(int i=0; i<contSwap; i++){
-        std::cout<<trocas[i].n1<<" "<<trocas[i].n2<<std::endl;
+    while(i<vec.size()-1){
+        index = min(vec, i);
+        if(index != i){
+            swap(&vec[i], &vec[index]);
+            res.push_back({i,index});
+        }
+        i++;
     }
+
+    cout<<res.size()<<endl;
+    for(auto i:res){
+        cout<<i.first<<" "<<i.second<<endl;
+    }
+
+    exit(0);
 }

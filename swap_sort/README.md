@@ -1,6 +1,6 @@
 ## Knowledge Used
-* math
-* conditional (ternary)
+* minmax1
+* selection sort
 
 ## Problem
 In this problem your goal is to sort an array consisting of n integers in at most n swaps. For the given array find the sequence of swaps that makes the array sorted in the non-descending order. Swaps are performed consecutively, one after another.

@@ -13,6 +13,9 @@
 
 ## Medium Problems
 * <a href="https://github.com/Sr-Souza-dev/Codeforces/tree/main/dead_pixel">10 dead_pixel<a>
+* <a href="https://github.com/Sr-Souza-dev/Codeforces/tree/main/swap_sort">12 swap_sort<a>
+* <a href="https://github.com/Sr-Souza-dev/Codeforces/tree/main/bad_prices">13 bad_prices<a>
+* <a href="https://github.com/Sr-Souza-dev/Codeforces/tree/main/skier">14 skier<a>
 
 
 ## Hard Problems
@@ -20,5 +23,5 @@
 
 ## Problems Solved
 * *Easy (A):* 10
-* *Medium:* 1
+* *Medium:* 4
 * *Hard:* 0
