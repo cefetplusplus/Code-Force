@@ -1,7 +1,6 @@
 ## Knowledge Used
-* stl (set,vector and pair)
-* sort
-* cartesian plane
+* stl (map)
+* brute force
 
 ## Problem
 Bees Alice and Alesya gave beekeeper Polina famous card game "Set" as a Christmas present. The deck consists of cards that vary in four features across three options for each kind of feature: number of shapes, shape, shading, and color. In this game, some combinations of three cards are said to make up a set. For every feature — color, number, shape, and shading — the three cards must display that feature as either all the same, or pairwise different. The picture below shows how sets look.

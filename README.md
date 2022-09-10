@@ -16,6 +16,16 @@
 * <a href="https://github.com/Sr-Souza-dev/Codeforces/tree/main/swap_sort">12 swap_sort<a>
 * <a href="https://github.com/Sr-Souza-dev/Codeforces/tree/main/bad_prices">13 bad_prices<a>
 * <a href="https://github.com/Sr-Souza-dev/Codeforces/tree/main/skier">14 skier<a>
+* <a href="https://github.com/Sr-Souza-dev/Codeforces/tree/main/hyperset">15 hyperset<a>
+* <a href="https://github.com/Sr-Souza-dev/Codeforces/tree/main/chat_order">16 chat_order<a>
+* <a href="https://github.com/Sr-Souza-dev/Codeforces/tree/main/bender_square">17 bender_square<a>
+* <a href="https://github.com/Sr-Souza-dev/Codeforces/tree/main/cyclic_components">18 cyclic_components<a>
+* <a href="https://github.com/Sr-Souza-dev/Codeforces/tree/main/fast_search">19 fast_search<a>
+* <a href="https://github.com/Sr-Souza-dev/Codeforces/tree/main/optimal_subsequences">20 optimal_subsequences<a>
+* <a href="https://github.com/Sr-Souza-dev/Codeforces/tree/main/platforms_jumping">21 platforms_jumping<a>
+* <a href="https://github.com/Sr-Souza-dev/Codeforces/tree/main/ropes">22 ropes<a>
+* <a href="https://github.com/Sr-Souza-dev/Codeforces/tree/main/string_game">23 string_game<a>
+* <a href="https://github.com/Sr-Souza-dev/Codeforces/tree/main/military_problem">24 military_problem<a>
 
 
 ## Hard Problems
@@ -26,5 +36,5 @@
 
 ## Problems Solved
 * *Easy (A):* 10
-* *Medium:* 4
+* *Medium:* 13
 * *Hard:* 0

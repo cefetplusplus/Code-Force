@@ -12,7 +12,7 @@ bool sortFunction(pair<int,int> v1, pair<int,int> v2){
     return false;
 }
 
-int main(){_
+void main(){_
     int n, currentX, currentY, befX, befY, res; cin>>n;
     cin.ignore();
 
@@ -36,7 +36,7 @@ int main(){_
 
             sort(format.begin(),format.end(), sortFunction);
             
-            if(!path.count(format)){res += 5; path.insert(format);} 
+            if(!path.find(format)){res += 5; path.insert(format);} 
             else res++;
         }
         cout<<res<<endl;
