@@ -20,6 +20,9 @@
 
 ## Hard Problems
 
+## Maratona Mineira
+* <a href="https://github.com/Sr-Souza-dev/Codeforces/tree/main/se_liga_na_cifra">Se liga na cifra<a>
+
 
 ## Problems Solved
 * *Easy (A):* 10
